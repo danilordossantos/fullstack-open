@@ -1,0 +1,18 @@
+```mermaid
+sequenceDiagram
+    actor user
+    participant browser
+    participant server
+
+    user->>browser: inputs note
+    activate browser
+    browser->>browser: redraws list of notes
+    deactivate browser 
+    browser->>server: HTTP POST /new_note_spa
+    activate server 
+    note right of browser: Content-type: application/json    
+    server-->>browser: HTTP 201 code
+    deactivate server    
+    note left of browser: browser shows updated list of notes
+    browser-->>user: lists notes
+```
