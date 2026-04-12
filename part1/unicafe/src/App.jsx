@@ -4,7 +4,6 @@ const Button = ({ handleClick, text }) => <button onClick={handleClick}>{text}</
 
 const Statistics = ({ text, value }) => <tr><td>{text}</td><td>{value}</td></tr>
 
-
 const App = () => {
   const [good, setGood] = useState(0)
   const [neutral, setNeutral] = useState(0)
