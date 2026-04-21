@@ -57,6 +57,5 @@ const App = () => {
       <Courses courses={courses} />
     </div>
   )
-}
+}  
 
-export default App
