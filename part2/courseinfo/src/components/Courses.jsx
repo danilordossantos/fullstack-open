@@ -1,8 +1,8 @@
 const Name = ({ name }) => (<h2>{name}</h2>)
 
-const Courses = (props) => {
+const Courses = ({courses}) => {
   return (
-    props.courses.map(course => (<Course key={course.id} course={course} />))
+    courses.map(course => (<Course key={course.id} course={course} />))
   )
 }
 
